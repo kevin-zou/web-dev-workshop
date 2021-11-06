@@ -1,0 +1,45 @@
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  margin: 0;
+  line-height: 1.15;
+  font-size: 4rem;
+  width: 100%;
+  background: #DB693B;
+  padding: 40px 0;
+  color: #fff;
+  text-align: center;
+
+  h1 {
+    margin: 0;
+  }
+}
+
+.main {
+  min-height: 100vh;
+  padding: 2rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 2rem 0;
+  border-top: 1px solid #eaeaea;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+
+  .links {
+    display: flex;
+    gap: 24px;
+  }
+}
