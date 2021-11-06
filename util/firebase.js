@@ -1,6 +1,6 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-import { getFirestore, collection, getDocs } from 'firebase/firestore'
+import { getFirestore, collection, addDoc, getDocs } from 'firebase/firestore'
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -27,7 +27,11 @@ const firestore = {
     const snapshot = await getDocs(menuItemsCollection);
     const menuItems = snapshot.docs.map(doc => doc.data());
     return menuItems;
-  } 
+  },
+
+  placeOrder: async (order) => {
+    await addDoc(collection(db, 'orders'), order);
+  }
 }
 
 export default firestore;
