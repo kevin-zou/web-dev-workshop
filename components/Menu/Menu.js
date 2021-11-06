@@ -3,7 +3,7 @@ import styles from './Menu.module.scss'
 import MenuItem from './MenuItem'
 import firestore from '../../util/firebase'
 
-export default function Menu () {
+export default function Menu ({ addItem }) {
   const [menuItems, setMenuItems] = useState([]);
 
   useEffect(() => {
@@ -32,11 +32,13 @@ export default function Menu () {
       description={item.description}
       picture={item.imgSrc}
       price={item.price}
+      addItem={addItem}
     />
   );
 
   return (
     <div className={styles.menu}>
+      <h2>Menu</h2>
       {items}
     </div>
   )

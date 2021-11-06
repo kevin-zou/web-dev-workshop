@@ -1,8 +1,17 @@
+import { useState } from 'react'
 import Head from 'next/head'
 import styles from '../styles/Home.module.scss'
+import Cart from '../components/Cart/Cart'
 import Menu from '../components/Menu/Menu'
 
 export default function Home() {
+  const [cartItems, setCartItems] = useState([]);
+
+  const addItem = (item) => {
+    console.log(item);
+    setCartItems([...cartItems, item]);
+  }
+
   return (
     <>
       <Head>
@@ -17,7 +26,8 @@ export default function Home() {
       </header>
 
       <main className={styles.main}>
-        <Menu />
+        <Menu addItem={addItem}/>
+        <Cart items={cartItems} setCartItems={setCartItems} />
       </main>
 
       <footer className={styles.footer}>
