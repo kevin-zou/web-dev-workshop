@@ -8,13 +8,13 @@ import { getFirestore, collection, getDocs } from 'firebase/firestore'
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyDLy_yc64qUFvByO8uO-w0cHifbbAUW4w0",
-  authDomain: "hackcamp-cafe.firebaseapp.com",
-  projectId: "hackcamp-cafe",
-  storageBucket: "hackcamp-cafe.appspot.com",
-  messagingSenderId: "566287504596",
-  appId: "1:566287504596:web:dc13ca6d2d2be6a9c85741",
-  measurementId: "G-2530P5DJMY"
+  apiKey: "AIzaSyAIoLDR0KIOkr5H-oaf3enEHCOUrZEcD5M",
+  authDomain: "hackcamp-cafe-4e25f.firebaseapp.com",
+  projectId: "hackcamp-cafe-4e25f",
+  storageBucket: "hackcamp-cafe-4e25f.appspot.com",
+  messagingSenderId: "105714849338",
+  appId: "1:105714849338:web:acc08ed02db84d78130703",
+  measurementId: "G-96E8G0T6K6"
 };
 
 // Initialize Firebase

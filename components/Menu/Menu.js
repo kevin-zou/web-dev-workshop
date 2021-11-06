@@ -23,7 +23,7 @@ export default function Menu () {
     }
     
     fetchData();
-  })
+  }, [])
 
   const items = menuItems.map((item) =>
     <MenuItem
