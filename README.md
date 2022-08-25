@@ -1,5 +1,5 @@
 ## HackCamp Cafe
-This is a project created for the Everything You Need to Start as a Web Developer workshop at [HackCamp 2021](https://hackcamp.nwplus.io). It replicates a very basic online food ordering service for the fictitious cafe HackCamp Cafe. It's built using [Next.js](https://nextjs.org/) and leverages [Firebase](https://firebase.google.com/) as a database and hosting provider.
+This is a project created for the "Everything you need to start as a web developer" workshop at [HackCamp 2021](https://hackcamp.nwplus.io). It replicates a very basic online food ordering service for the fictitious cafe HackCamp Cafe. It's built using [Next.js](https://nextjs.org/) and leverages [Firebase](https://firebase.google.com/) as a database and hosting provider.
 
 ![image](https://user-images.githubusercontent.com/5078356/140621638-8847782b-6363-474f-a323-729957352f33.png)
 
